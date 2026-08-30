@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Young Justice | Training Network</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="landing-page">
+    <!-- Bootstrap Navbar: Responsive navigation bar with logo, links, and mobile menu toggle -->
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+      <!-- Bootstrap Container: Responsive container for centered navbar content -->
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="images/young-justice-logo.png" alt="Young Justice logo" />
+        </a>
+
+        <!-- Mobile menu -->
+        <input type="checkbox" id="menu-toggle" />
+
+        <label for="menu-toggle" class="menu-button">
+          <i class="bi bi-list"></i>
+        </label>
+
+        <div class="navbar-menu">
+          <a href="#home">
+            <i class="bi bi-house-door"></i>
+            Home
+          </a>
+
+          <a href="#members">
+            <i class="bi bi-people"></i>
+            Members
+          </a>
+
+          <a href="#mentors">
+            <i class="bi bi-person-badge"></i>
+            Mentors
+          </a>
+
+          <a href="#equipment">
+            <i class="bi bi-tools"></i>
+            Equipment
+          </a>
+
+          <a href="#headquarters">
+            <i class="bi bi-geo-alt"></i>
+            Headquarters
+          </a>
+
+          <a href="#rules">
+            <i class="bi bi-shield-check"></i>
+            Rules
+          </a>
+
+          <a href="#enroll">
+            <i class="bi bi-journal-plus"></i>
+            Enroll
+          </a>
+
+          <a class="logout-link" href="index.html">
+            <i class="bi bi-box-arrow-right"></i>
+            Log Out
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <!-- Carousel -->
+        <input type="radio" name="hero-carousel" id="hero-slide-1" checked />
+        <input type="radio" name="hero-carousel" id="hero-slide-2" />
+        <input type="radio" name="hero-carousel" id="hero-slide-3" />
+
+        <!-- Hero Images -->
+        <div class="hero-slides">
+          <div class="hero-slide slide-1"></div>
+          <div class="hero-slide slide-2"></div>
+          <div class="hero-slide slide-3"></div>
+        </div>
+
+        <!-- Dark overlay for readable text -->
+        <div class="hero-overlay"></div>
+
+        <!-- Bootstrap Container: Centered container for hero section content -->
+        <div class="container hero-content">
+          <!-- Bootstrap Grid: Row with vertical alignment for hero content layout -->
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-8">
+              <span class="eyebrow">
+                TRAINING • TEAMWORK • RESPONSIBILITY
+              </span>
+
+              <h1>
+                Train. Learn.<br />
+                <span>Protect.</span>
+              </h1>
+
+              <p>
+                A training environment where young heroes build their skills,
+                learn from experienced mentors, and prepare for missions.
+              </p>
+
+              <div class="hero-actions">
+                <!-- Bootstrap Button: Danger button for Call To Action (Meet the Team) -->
+                <a href="#members" class="btn btn-danger hero-button">
+                  MEET THE TEAM
+                  <i class="bi bi-arrow-down"></i>
+                </a>
+
+                <!-- Bootstrap Button: Outline light button for secondary action (Enroll) -->
+                <a href="#enroll" class="btn btn-outline-light hero-button">
+                  ENROLL
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Arrows -->
+
+        <div class="hero-controls">
+          <!-- Slide 1 arrows -->
+          <label
+            for="hero-slide-3"
+            class="hero-arrow slide-1-prev"
+            aria-label="Previous slide"
+          >
+            <i class="bi bi-chevron-left"></i>
+          </label>
+
+          <label
+            for="hero-slide-2"
+            class="hero-arrow slide-1-next"
+            aria-label="Next slide"
+          >
+            <i class="bi bi-chevron-right"></i>
+          </label>
+
+          <!-- Slide 2 arrows -->
+          <label
+            for="hero-slide-1"
+            class="hero-arrow slide-2-prev"
+            aria-label="Previous slide"
+          >
+            <i class="bi bi-chevron-left"></i>
+          </label>
+
+          <label
+            for="hero-slide-3"
+            class="hero-arrow slide-2-next"
+            aria-label="Next slide"
+          >
+            <i class="bi bi-chevron-right"></i>
+          </label>
+
+          <!-- Slide 3 arrows -->
+          <label
+            for="hero-slide-2"
+            class="hero-arrow slide-3-prev"
+            aria-label="Previous slide"
+          >
+            <i class="bi bi-chevron-left"></i>
+          </label>
+
+          <label
+            for="hero-slide-1"
+            class="hero-arrow slide-3-next"
+            aria-label="Next slide"
+          >
+            <i class="bi bi-chevron-right"></i>
+          </label>
+        </div>
+      </section>
+
+      <section id="members" class="content-section">
+        <!-- Bootstrap Container: Responsive container for members section content -->
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">THE TEAM</span>
+            <h2>Members</h2>
+            <p>
+              Young heroes developing their abilities through teamwork,
+              discipline, and experience.
+            </p>
+          </div>
+          <!-- Bootstrap Grid: Row with 4-unit gap spacing for member cards layout -->
+          <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <!-- Bootstrap Card: Member profile card with image, info, and action button -->
+              <article class="card member-card">
+                <img
+                  src="images/member1.jpg"
+                  class="card-img-top"
+                  alt="Dick Grayson as Robin"
+                />
+                <div class="card-body">
+                  <!-- Bootstrap Badge: Specialty badge highlighting member's skill focus -->
+                  <span class="badge">STRATEGY</span>
+                  <h3>Dick Grayson</h3>
+                  <p class="role">Robin / Nightwing</p>
+                  <p>
+                    Strategy, detective skills, martial arts, acrobatics, and
+                    technology.
+                  </p>
+                  <!-- Bootstrap Button: Outline danger button to view member profile modal -->
+                  <a
+                    href="#member-1"
+                    class="btn btn-outline-danger profile-button"
+                    >VIEW PROFILE</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <article class="card member-card">
+                <img
+                  src="images/member2.jpg"
+                  class="card-img-top"
+                  alt="Kaldur'ahm as Aqualad"
+                />
+                <div class="card-body">
+                  <span class="badge">LEADERSHIP</span>
+                  <h3>Kaldur'ahm</h3>
+                  <p class="role">Aqualad</p>
+                  <p>
+                    Leadership, combat, hydrokinesis, discipline, and team
+                    coordination.
+                  </p>
+                  <a
+                    href="#member-2"
+                    class="btn btn-outline-danger profile-button"
+                    >VIEW PROFILE</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <article class="card member-card">
+                <img
+                  src="images/member3.jpg"
+                  class="card-img-top"
+                  alt="Wally West as Kid Flash"
+                />
+                <div class="card-body">
+                  <span class="badge">SPEED</span>
+                  <h3>Wally West</h3>
+                  <p class="role">Kid Flash</p>
+                  <p>
+                    Super speed, quick reflexes, rapid movement, and perception.
+                  </p>
+                  <a
+                    href="#member-3"
+                    class="btn btn-outline-danger profile-button"
+                    >VIEW PROFILE</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <article class="card member-card">
+                <img
+                  src="images/member4.jpg"
+                  class="card-img-top"
+                  alt="Conner Kent as Superboy"
+                />
+                <div class="card-body">
+                  <span class="badge">STRENGTH</span>
+                  <h3>Conner Kent</h3>
+                  <p class="role">Superboy</p>
+                  <p>
+                    Enhanced strength, durability, senses, and physical
+                    conditioning.
+                  </p>
+                  <a
+                    href="#member-4"
+                    class="btn btn-outline-danger profile-button"
+                    >VIEW PROFILE</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <article class="card member-card">
+                <img
+                  src="images/member5.jpg"
+                  class="card-img-top"
+                  alt="M'gann M'orzz as Miss Martian"
+                />
+                <div class="card-body">
+                  <span class="badge">TELEPATHY</span>
+                  <h3>M'gann M'orzz</h3>
+                  <p class="role">Miss Martian</p>
+                  <p>
+                    Communication, reconnaissance, infiltration, telepathy, and
+                    flight.
+                  </p>
+                  <a
+                    href="#member-5"
+                    class="btn btn-outline-danger profile-button"
+                    >VIEW PROFILE</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <article class="card member-card">
+                <img
+                  src="images/member6.jpg"
+                  class="card-img-top"
+                  alt="Artemis Crock as Artemis"
+                />
+                <div class="card-body">
+                  <span class="badge">ARCHERY</span>
+                  <h3>Artemis Crock</h3>
+                  <p class="role">Artemis / Tigress</p>
+                  <p>
+                    Precision, stealth, archery, martial arts, and tactical
+                    thinking.
+                  </p>
+                  <a
+                    href="#member-6"
+                    class="btn btn-outline-danger profile-button"
+                    >VIEW PROFILE</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <article class="card member-card">
+                <img
+                  src="images/member7.jpg"
+                  class="card-img-top"
+                  alt="Zatanna"
+                />
+                <div class="card-body">
+                  <span class="badge">MAGIC</span>
+                  <h3>Zatanna</h3>
+                  <p class="role">Member</p>
+                  <p>
+                    Magic, support abilities, communication, and mission
+                    teamwork.
+                  </p>
+                  <a
+                    href="#member-7"
+                    class="btn btn-outline-danger profile-button"
+                    >VIEW PROFILE</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <article class="card member-card">
+                <img
+                  src="images/member8.jpg"
+                  class="card-img-top"
+                  alt="Rocket"
+                />
+                <div class="card-body">
+                  <span class="badge">DEFENSE</span>
+                  <h3>Rocket</h3>
+                  <p class="role">Member</p>
+                  <p>
+                    Defensive abilities, advanced equipment, and mission
+                    support.
+                  </p>
+                  <a
+                    href="#member-8"
+                    class="btn btn-outline-danger profile-button"
+                    >VIEW PROFILE</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--CSS Modals-->
+      <div id="member-1" class="profile-modal">
+        <a href="#members" class="modal-bg" aria-label="Close"></a>
+        <div class="profile-box">
+          <a href="#members" class="modal-close" aria-label="Close"
+            ><i class="bi bi-x-lg"></i></a
+          ><img src="images/member1.jpg" alt="Dick Grayson" />
+          <div>
+            <span class="eyebrow">STRATEGY</span>
+            <h2>Dick Grayson</h2>
+            <p class="role">Robin / Nightwing</p>
+            <p>
+              Uses strategy, detective skills, martial arts, acrobatics,
+              leadership, and technology to support the Team.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="member-2" class="profile-modal">
+        <a href="#members" class="modal-bg" aria-label="Close"></a>
+        <div class="profile-box">
+          <a href="#members" class="modal-close" aria-label="Close"
+            ><i class="bi bi-x-lg"></i></a
+          ><img src="images/member2.jpg" alt="Kaldur'ahm" />
+          <div>
+            <span class="eyebrow">LEADERSHIP</span>
+            <h2>Kaldur'ahm</h2>
+            <p class="role">Aqualad</p>
+            <p>
+              A disciplined leader skilled in combat, hydrokinesis,
+              responsibility, and team coordination.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="member-3" class="profile-modal">
+        <a href="#members" class="modal-bg" aria-label="Close"></a>
+        <div class="profile-box">
+          <a href="#members" class="modal-close" aria-label="Close"
+            ><i class="bi bi-x-lg"></i></a
+          ><img src="images/member3.jpg" alt="Wally West" />
+          <div>
+            <span class="eyebrow">SPEED</span>
+            <h2>Wally West</h2>
+            <p class="role">Kid Flash</p>
+            <p>
+              Uses super speed, fast reflexes, rapid movement, and quick
+              perception to support the Team.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="member-4" class="profile-modal">
+        <a href="#members" class="modal-bg" aria-label="Close"></a>
+        <div class="profile-box">
+          <a href="#members" class="modal-close" aria-label="Close"
+            ><i class="bi bi-x-lg"></i></a
+          ><img src="images/member4.jpg" alt="Conner Kent" />
+          <div>
+            <span class="eyebrow">STRENGTH</span>
+            <h2>Conner Kent</h2>
+            <p class="role">Superboy</p>
+            <p>
+              A powerful member with enhanced strength, durability, senses, and
+              physical conditioning.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="member-5" class="profile-modal">
+        <a href="#members" class="modal-bg" aria-label="Close"></a>
+        <div class="profile-box">
+          <a href="#members" class="modal-close" aria-label="Close"
+            ><i class="bi bi-x-lg"></i></a
+          ><img src="images/member5.jpg" alt="M'gann M'orzz" />
+          <div>
+            <span class="eyebrow">TELEPATHY</span>
+            <h2>M'gann M'orzz</h2>
+            <p class="role">Miss Martian</p>
+            <p>
+              Supports communication, reconnaissance, infiltration, telepathy,
+              and flight.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="member-6" class="profile-modal">
+        <a href="#members" class="modal-bg" aria-label="Close"></a>
+        <div class="profile-box">
+          <a href="#members" class="modal-close" aria-label="Close"
+            ><i class="bi bi-x-lg"></i></a
+          ><img src="images/member6.jpg" alt="Artemis Crock" />
+          <div>
+            <span class="eyebrow">ARCHERY</span>
+            <h2>Artemis Crock</h2>
+            <p class="role">Artemis / Tigress</p>
+            <p>
+              Demonstrates precision, stealth, archery, martial arts, and
+              tactical thinking.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="member-7" class="profile-modal">
+        <a href="#members" class="modal-bg" aria-label="Close"></a>
+        <div class="profile-box">
+          <a href="#members" class="modal-close" aria-label="Close"
+            ><i class="bi bi-x-lg"></i></a
+          ><img src="images/member7.jpg" alt="Zatanna" />
+          <div>
+            <span class="eyebrow">MAGIC</span>
+            <h2>Zatanna</h2>
+            <p class="role">Member</p>
+            <p>
+              Develops magical abilities and supports the Team during missions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="member-8" class="profile-modal">
+        <a href="#members" class="modal-bg" aria-label="Close"></a>
+        <div class="profile-box">
+          <a href="#members" class="modal-close" aria-label="Close"
+            ><i class="bi bi-x-lg"></i></a
+          ><img src="images/member8.jpg" alt="Rocket" />
+          <div>
+            <span class="eyebrow">DEFENSE</span>
+            <h2>Rocket</h2>
+            <p class="role">Member</p>
+            <p>
+              Uses advanced equipment and defensive abilities to support the
+              Team.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section id="mentors" class="content-section dark-section">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">GUIDANCE</span>
+            <h2>Mentors</h2>
+            <p>
+              Experienced heroes guide members in skills, responsibility,
+              teamwork, and development.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Bootstrap Card: Mentor card with image and role description -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="card mentor-card">
+                <img
+                  src="images/mentor1.jpg"
+                  class="card-img-top mentor-image"
+                  alt="Batman"
+                />
+
+                <div class="card-body">
+                  <h3>Batman</h3>
+                  <p class="role">Strategy & Investigation</p>
+                  <p>
+                    Guides members in planning, observation, discipline, and
+                    detective work.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!--12. Bootstrap Card-->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="card mentor-card">
+                <img
+                  src="images/mentor2.jpg"
+                  class="card-img-top mentor-image"
+                  alt="Black Canary"
+                />
+
+                <div class="card-body">
+                  <h3>Black Canary</h3>
+                  <p class="role">Combat & Training</p>
+                  <p>
+                    Focuses on combat technique, confidence, teamwork, and
+                    responsible action.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Bootstrap Card: Mentor card with image and role description -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="card mentor-card">
+                <img
+                  src="images/mentor3.jpg"
+                  class="card-img-top mentor-image"
+                  alt="Zatara"
+                />
+
+                <div class="card-body">
+                  <h3>Zatara</h3>
+                  <p class="role">Magic & Discipline</p>
+                  <p>
+                    Provides guidance in magical studies, control, focus, and
+                    responsibility.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Bootstrap Card: Mentor card with image and role description -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="card mentor-card">
+                <img
+                  src="images/mentor4.jpg"
+                  class="card-img-top mentor-image"
+                  alt="Red Tornado"
+                />
+
+                <div class="card-body">
+                  <h3>Red Tornado</h3>
+                  <p class="role">Team Development</p>
+                  <p>
+                    Supports teamwork, mission preparation, and structured
+                    learning.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="equipment" class="content-section">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">FIELD RESOURCES</span>
+            <h2>Equipment & Field Gear</h2>
+            <p>
+              Resources used for training, communication, protection,
+              transportation, and mission support.
+            </p>
+          </div>
+          <div class="row g-4">
+            <!-- Bootstrap Card: Icon card for equipment category (Communication, Training, etc) -->
+            <div class="col-md-6 col-lg-3">
+              <article class="card info-card">
+                <i class="bi bi-cpu"></i>
+                <h3>Communication</h3>
+                <p>
+                  Secure team communication devices for coordination and mission
+                  updates.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card info-card">
+                <i class="bi bi-crosshair"></i>
+                <h3>Training Gear</h3>
+                <p>
+                  Protective and practice equipment used during physical
+                  training.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card info-card">
+                <i class="bi bi-car-front"></i>
+                <h3>Transport</h3>
+                <p>
+                  Vehicles and transport support for approved training and
+                  missions.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card info-card">
+                <i class="bi bi-radar"></i>
+                <h3>Tracking</h3>
+                <p>
+                  Tracking and monitoring tools used for team awareness and
+                  coordination.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="headquarters" class="content-section gray-section">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">TEAM LOCATIONS</span>
+            <h2>Headquarters & Fields</h2>
+            <p>
+              Locations connected to training, operations, and team
+              coordination.
+            </p>
+          </div>
+          <div class="row g-4">
+            <!-- Bootstrap Card: Location card with icon and description (Mount Justice, etc) -->
+            <div class="col-md-6 col-lg-3">
+              <article class="card location-card">
+                <div class="location-icon"><i class="bi bi-building"></i></div>
+                <h3>Mount Justice</h3>
+                <p>Primary base for training, meetings, and team activities.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card location-card">
+                <div class="location-icon"><i class="bi bi-bank"></i></div>
+                <h3>Hall of Justice</h3>
+                <p>
+                  A Justice League facility connected to support and
+                  coordination.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card location-card">
+                <div class="location-icon"><i class="bi bi-box-seam"></i></div>
+                <h3>Warehouse</h3>
+                <p>
+                  Used for equipment storage, maintenance, and practical
+                  training.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="card location-card">
+                <div class="location-icon">
+                  <i class="bi bi-broadcast-pin"></i>
+                </div>
+                <h3>Watchtower</h3>
+                <p>
+                  A Justice League facility supporting communication and
+                  operations.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">SPECIALIZATIONS</span>
+            <h2>Fields of Operation</h2>
+            <p>Core areas where members apply their training and teamwork.</p>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="field-item">
+                <i class="bi bi-eye-slash"></i>
+                <div>
+                  <h3>Covert Operations</h3>
+                  <p>Stealth, infiltration, and intelligence work.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="field-item">
+                <i class="bi bi-shield-check"></i>
+                <div>
+                  <h3>Combat & Defense</h3>
+                  <p>Physical skills, defense, and safe practice.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="field-item">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h3>Team Strategy</h3>
+                  <p>Planning, coordination, and decision-making.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="field-item">
+                <i class="bi bi-search"></i>
+                <div>
+                  <h3>Investigation</h3>
+                  <p>Observation, research, and evidence gathering.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="field-item">
+                <i class="bi bi-heart-pulse"></i>
+                <div>
+                  <h3>Rescue Operations</h3>
+                  <p>Emergency response and civilian protection.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="field-item">
+                <i class="bi bi-cpu"></i>
+                <div>
+                  <h3>Technology</h3>
+                  <p>Equipment, tracking, communication, and support.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section content-section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <img
+                src="images/hero2.jpg"
+                alt="Young Justice team"
+                class="about-image"
+              />
+            </div>
+            <div class="col-lg-6">
+              <span class="eyebrow">ABOUT THE TEAM</span>
+              <h2>Young heroes, guided by experienced mentors.</h2>
+              <p>
+                Young Justice is a group of young heroes connected to the
+                Justice League. Members are trained and guided by experienced
+                heroes while developing teamwork, discipline, responsibility,
+                and leadership.
+              </p>
+              <p>
+                The Team specializes in covert operations, while training
+                includes physical and intellectual development. Not every member
+                needs superpowers to contribute.
+              </p>
+              <!-- Bootstrap Alert: Info alert highlighting important training principle -->
+              <div class="alert about-alert">
+                <i class="bi bi-info-circle"></i> Good training is also about
+                judgment, teamwork, responsibility, and learning.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="director-section">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-md-4 text-center">
+              <img
+                src="images/director.jpg"
+                alt="Black Canary"
+                class="director-image"
+              />
+            </div>
+            <div class="col-md-8">
+              <span class="eyebrow">TRAINING DIRECTOR</span>
+              <h2>Black Canary</h2>
+              <p class="role">Combat Instructor & Training Mentor</p>
+              <p>
+                Black Canary helps young heroes improve combat skills,
+                confidence, teamwork, and responsible decision-making.
+              </p>
+              <p class="director-note">
+                “Training is not just about becoming stronger. It is about
+                learning when and how to use what you have.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rules" class="content-section gray-section">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">TRAINING GUIDE</span>
+            <h2>Team Rules & Policies</h2>
+            <p>Clear rules keep training organized, respectful, and safe.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <div class="rules-card">
+                <div><b>01</b><span>Work as a Team</span></div>
+                <div><b>02</b><span>Follow Mission Instructions</span></div>
+                <div><b>03</b><span>Maintain Secrecy</span></div>
+                <div><b>04</b><span>Respect Mentors and Members</span></div>
+                <div><b>05</b><span>Avoid Reckless Behavior</span></div>
+                <div><b>06</b><span>Take Care of Equipment</span></div>
+                <div><b>07</b><span>Complete Training Requirements</span></div>
+                <div><b>08</b><span>Report Problems</span></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <!-- Bootstrap Alert: Danger alert displaying disciplinary actions list -->
+              <div class="alert discipline-alert">
+                <strong>Disciplinary Actions</strong>
+                <ul>
+                  <li>Verbal Warning</li>
+                  <li>Written Warning</li>
+                  <li>Mentor Review</li>
+                  <li>Temporary Loss of Training Privileges</li>
+                  <li>Additional Training</li>
+                  <li>Referral to Team Administration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">LEARNING AREAS</span>
+            <h2>Training Programs</h2>
+            <p>
+              Choose a learning area and develop skills through structured
+              training.
+            </p>
+          </div>
+          <div class="row g-4">
+            <!-- Bootstrap Card: Training program card with icon, description, and difficulty badge -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card program-card">
+                <i class="bi bi-shield"></i>
+                <h3>Combat & Defense</h3>
+                <p>Hand-to-hand combat, defense, and physical conditioning.</p>
+                <span class="badge">INTERMEDIATE</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card program-card">
+                <i class="bi bi-diagram-3"></i>
+                <h3>Tactical Strategy</h3>
+                <p>Mission planning, teamwork, and decision-making.</p>
+                <span class="badge">ADVANCED</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card program-card">
+                <i class="bi bi-cpu"></i>
+                <h3>Technology</h3>
+                <p>Equipment, communication, tracking, and technical tools.</p>
+                <span class="badge">INTERMEDIATE</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card program-card">
+                <i class="bi bi-people"></i>
+                <h3>Leadership</h3>
+                <p>
+                  Team coordination, responsibility, and leadership development.
+                </p>
+                <span class="badge">ADVANCED</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card program-card">
+                <i class="bi bi-eye-slash"></i>
+                <h3>Covert Operations</h3>
+                <p>Stealth, investigation, infiltration, and intelligence.</p>
+                <span class="badge">ADVANCED</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card program-card">
+                <i class="bi bi-stars"></i>
+                <h3>Special Abilities</h3>
+                <p>Safe control and improvement of individual abilities.</p>
+                <span class="badge">VARIES</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="enroll" class="enroll-section">
+        <div class="container">
+          <div class="section-title light-title">
+            <span class="eyebrow">REGISTRATION</span>
+            <h2>Enroll in a Training Program</h2>
+            <p>
+              Complete the form below to register for a fictional training
+              program.
+            </p>
+          </div>
+          <div class="enroll-box">
+            <!-- Bootstrap Form: Enrollment form with multiple input types (text, email, select, textarea) -->
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="enrollId" class="form-label">Student ID</label
+                  ><input type="text" class="form-control" id="enrollId" />
+                </div>
+                <div class="col-md-6">
+                  <label for="enrollName" class="form-label">Student Name</label
+                  ><input type="text" class="form-control" id="enrollName" />
+                </div>
+                <div class="col-md-6">
+                  <label for="enrollEmail" class="form-label">Email</label
+                  ><input type="email" class="form-control" id="enrollEmail" />
+                </div>
+                <div class="col-md-6">
+                  <label for="program" class="form-label">Program</label
+                  ><select class="form-select" id="program">
+                    <option selected>Select a program</option>
+                    <option>Combat & Defense</option>
+                    <option>Tactical Strategy</option>
+                    <option>Technology</option>
+                    <option>Leadership</option>
+                    <option>Covert Operations</option>
+                    <option>Special Abilities</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="yearLevel" class="form-label">Year Level</label
+                  ><select class="form-select" id="yearLevel">
+                    <option selected>Select year level</option>
+                    <option>First Year</option>
+                    <option>Second Year</option>
+                    <option>Third Year</option>
+                    <option>Fourth Year</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="schedule" class="form-label"
+                    >Preferred Schedule</label
+                  ><select class="form-select" id="schedule">
+                    <option selected>Select schedule</option>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Evening</option>
+                    <option>Weekend</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="experience" class="form-label"
+                    >Previous Experience</label
+                  ><input
+                    type="text"
+                    class="form-control"
+                    id="experience"
+                    placeholder="School, sports, training, etc."
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="reason" class="form-label"
+                    >Reason for Enrolling</label
+                  ><textarea
+                    class="form-control"
+                    id="reason"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="agreement"
+                    /><label class="form-check-label" for="agreement"
+                      >I confirm that the information above is correct.</label
+                    >
+                  </div>
+                </div>
+                <div class="col-12">
+                  <!-- Bootstrap Button: Danger submit button for enrollment form with send icon -->
+                  <button type="button" class="btn btn-danger enroll-button">
+                    SUBMIT ENROLLMENT <i class="bi bi-send"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-3 align-items-center">
+          <div class="col-md-7">
+            <img
+              src="images/young-justice-logo.png"
+              alt="Young Justice logo"
+              class="footer-logo"
+            />
+            <p>Young Justice Training Network is a Web Technologies project.</p>
+          </div>
+          <div class="col-md-5 text-md-end">
+            <a href="#home">Back to top <i class="bi bi-arrow-up"></i></a>
+            <p>© 2026 Young Justice Training Network</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
